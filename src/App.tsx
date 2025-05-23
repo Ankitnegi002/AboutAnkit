@@ -18,7 +18,7 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-gray-50">
+      <div className="flex flex-col min-h-screen bg-black">
         <Navbar />
         <main className="flex-grow">
           <Routes>
@@ -34,7 +34,7 @@ function App() {
             <Route path="/softskills/week5" element={<SoftSkillsWeek5 />} />
             <Route path="/softskills/week6" element={<SoftSkillsWeek6 />} />
             <Route path="/softskills/week:weekNumber" element={<SoftSkillsWeek />} />
-            <Route path="*" element={<h1 className='text-center mt-10 text-xl'>Page Not Found</h1>} />
+            <Route path="*" element={<h1 className='text-center mt-10 text-xl text-white'>Page Not Found</h1>} />
           </Routes>
         </main>
         <Footer />

@@ -1,55 +1,108 @@
+import { motion } from "framer-motion";
+
 function Week5() {
-    return (
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-3xl font-bold text-gray-900 mb-4">
-          Week 5: The Pursuit of Happyness - Movie Analysis
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-black text-white">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-center mb-16"
+      >
+        <h1 className="text-5xl sm:text-6xl font-bold text-white mb-8">
+          Week 5: Mini Film Festival
         </h1>
-        <p className="text-lg text-gray-600">
-          A list of 10 movies was provided, and we had to select one and answer a set of given questions based on that movie. The selected movie was{" "}
-          <strong>The Pursuit of Happyness</strong>.
+        <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          A curated selection of films followed by in-depth analysis and discussion.
         </p>
-  
-        <div className="mt-6">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">The Pursuit of Happyness</h2>
-          <img 
-            src="https://media.licdn.com/dms/image/v2/C5612AQFrZ_i1s8wfcw/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1520240502700?e=1746662400&v=beta&t=e0i4Q3O1CU5xrB5BHDzQ-mGtsUILVJwN0-GordfFwxo" 
-            alt="Movie poster of The Pursuit of Happyness" 
-            className="w-full max-w-md mx-auto rounded-lg shadow-md mb-4" 
-          />
-        </div>
-  
-        <div className="mt-6 space-y-6">
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="bg-black rounded-xl p-8 mb-12 border-2 border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+      >
+        <h2 className="text-3xl font-bold text-white mb-8 border-b border-white/10 pb-4">
+          Movie Analysis Questions
+        </h2>
+        <div className="space-y-8">
           <div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">1) My Favorite Dialogue and Why?</h3>
-            <p className="text-gray-700">
-              "Don't ever let somebody tell you you can't do something. Not even me. All right? You got a dream, you gotta protect it."
-            </p>
-            <p className="text-gray-600">
-              This dialogue inspires resilience and self-belief, teaching us to stay committed to our dreams despite obstacles.
+            <h3 className="text-xl font-semibold text-white mb-4">Plot Summary</h3>
+            <p className="text-gray-300">
+              What is the main storyline of the film? How does it develop throughout the movie?
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">2) My Personal Review</h3>
-            <p className="text-gray-700">
-              The movie beautifully captures the struggles and perseverance of a man striving for a better life. Will Smith’s performance makes it deeply emotional and inspiring.
+            <h3 className="text-xl font-semibold text-white mb-4">Character Analysis</h3>
+            <p className="text-gray-300">
+              Who are the main characters? How do they evolve throughout the story?
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">3) Learning to Take Away from the Movie</h3>
-            <p className="text-gray-700">
-              The key takeaway is persistence. No matter how tough life gets, staying committed to your goals and working hard will eventually lead to success.
+            <h3 className="text-xl font-semibold text-white mb-4">Themes and Messages</h3>
+            <p className="text-gray-300">
+              What are the main themes explored in the film? What messages is the director trying to convey?
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">4) Related Concepts Learned in the Classroom</h3>
-            <p className="text-gray-700">
-              The movie aligns with concepts like perseverance, emotional intelligence, and problem-solving, which are essential skills in personal and professional life.
+            <h3 className="text-xl font-semibold text-white mb-4">Personal Reflection</h3>
+            <p className="text-gray-300">
+              How did the film impact you personally? What aspects resonated with you the most?
             </p>
           </div>
         </div>
-      </div>
-    );
-  }
-  
-  export default Week5;
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="bg-black rounded-xl p-8 mb-12 border-2 border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+      >
+        <h2 className="text-3xl font-bold text-white mb-8 border-b border-white/10 pb-4">
+          Learning Objectives
+        </h2>
+        <ul className="list-disc list-inside text-gray-300 space-y-4">
+          <li>Develop critical thinking skills through film analysis</li>
+          <li>Enhance understanding of storytelling techniques</li>
+          <li>Improve ability to identify and discuss themes</li>
+          <li>Practice articulating personal responses to media</li>
+          <li>Build confidence in group discussion and presentation</li>
+        </ul>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        className="bg-black rounded-xl p-8 border-2 border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+      >
+        <h2 className="text-3xl font-bold text-white mb-8 border-b border-white/10 pb-4">
+          Film Selection
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="relative group overflow-hidden rounded-xl border-2 border-white/10 hover:border-white/30 transition-all duration-300">
+            <img
+              src="/images/film1.jpg"
+              alt="Film 1"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          <div className="relative group overflow-hidden rounded-xl border-2 border-white/10 hover:border-white/30 transition-all duration-300">
+            <img
+              src="/images/film2.jpg"
+              alt="Film 2"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  );
+}
+
+export default Week5;
   

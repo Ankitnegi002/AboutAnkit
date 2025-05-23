@@ -1,129 +1,106 @@
+import { motion } from "framer-motion";
+
 function Week6() {
-    const gdData = {
-      title: "Do's and Don'ts of a Group Discussion (GD)",
-      doAndDonts: {
-        do: [
-          "Be prepared with knowledge about the topic.",
-          "Listen carefully to others before contributing.",
-          "Be respectful of others’ opinions and viewpoints.",
-          "Speak clearly and confidently.",
-          "Support your ideas with facts and examples.",
-          "Encourage participation from all members."
-        ],
-        dont: [
-          "Interrupt others while they are speaking.",
-          "Overpower the conversation or dominate the discussion.",
-          "Use offensive or disrespectful language.",
-          "Stick only to your point of view without considering others.",
-          "Be unprepared or make vague statements.",
-          "Engage in side conversations or distractions."
-        ]
-      },
-      typesOfGDs: [
-        {
-          name: "Topic-based GD",
-          description:
-            "A group discusses a specific topic, typically related to current events or societal issues."
-        },
-        {
-          name: "Case Study-based GD",
-          description:
-            "Participants solve a problem presented in the form of a case study."
-        },
-        {
-          name: "Debate-based GD",
-          description:
-            "Two opposing views are presented, and each group tries to convince the other."
-        },
-        {
-          name: "Role Play-based GD",
-          description:
-            "Participants take on specific roles and discuss a topic from their assigned perspectives."
-        }
-      ],
-      ideaGenerationTechniques: [
-        {
-          name: "Brainstorming",
-          description:
-            "A free-flowing session where participants suggest ideas without judgment."
-        },
-        {
-          name: "Mind Mapping",
-          description:
-            "Visual representation of ideas that helps organize thoughts and discover connections."
-        },
-        {
-          name: "SWOT Analysis",
-          description:
-            "Analyzing a topic or problem by evaluating its Strengths, Weaknesses, Opportunities, and Threats."
-        },
-        {
-          name: "Reverse Thinking",
-          description:
-            "Looking at the problem from an opposite or unconventional angle to find new ideas."
-        },
-        {
-          name: "Six Thinking Hats",
-          description:
-            "A method where each participant adopts one of six different perspectives to solve the problem."
-        }
-      ]
-    };
-  
-    return (
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-3xl font-bold text-gray-900 mb-4">
-          Group Discussion Tips and Techniques
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-black text-white">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-center mb-16"
+      >
+        <h1 className="text-5xl sm:text-6xl font-bold text-white mb-8">
+          Week 6: Group Discussion
         </h1>
-  
-        <section id="dos-donts" className="mt-6">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Do's and Don'ts of a GD</h2>
-          <div className="flex space-x-6">
-            <div className="flex-1">
-              <h3 className="text-xl font-bold text-green-600 mb-2">Do's</h3>
-              <ul className="text-gray-700">
-                {gdData.doAndDonts.do.map((item, index) => (
-                  <li key={index} className="mb-2">- {item}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="flex-1">
-              <h3 className="text-xl font-bold text-red-600 mb-2">Don'ts</h3>
-              <ul className="text-gray-700">
-                {gdData.doAndDonts.dont.map((item, index) => (
-                  <li key={index} className="mb-2">- {item}</li>
-                ))}
-              </ul>
-            </div>
+        <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          A comprehensive session on effective communication and different types of group discussions.
+        </p>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="bg-black rounded-xl p-8 mb-12 border-2 border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+      >
+        <h2 className="text-3xl font-bold text-white mb-8 border-b border-white/10 pb-4">
+          Group Discussion Guidelines
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-4">Do's</h3>
+            <ul className="list-disc list-inside text-gray-300 space-y-2">
+              <li>Listen actively to others</li>
+              <li>Maintain eye contact</li>
+              <li>Speak clearly and concisely</li>
+              <li>Respect different viewpoints</li>
+              <li>Stay on topic</li>
+            </ul>
           </div>
-        </section>
-  
-        <section id="types-of-gds" className="mt-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Different Types of GDs</h2>
-          <ul className="space-y-4">
-            {gdData.typesOfGDs.map((gd, index) => (
-              <li key={index}>
-                <h3 className="text-xl font-semibold text-gray-900">{gd.name}</h3>
-                <p className="text-gray-700">{gd.description}</p>
-              </li>
-            ))}
-          </ul>
-        </section>
-  
-        <section id="idea-generation" className="mt-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Idea Generation Techniques</h2>
-          <ul className="space-y-4">
-            {gdData.ideaGenerationTechniques.map((technique, index) => (
-              <li key={index}>
-                <h3 className="text-xl font-semibold text-gray-900">{technique.name}</h3>
-                <p className="text-gray-700">{technique.description}</p>
-              </li>
-            ))}
-          </ul>
-        </section>
-      </div>
-    );
-  }
-  
-  export default Week6;
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-4">Don'ts</h3>
+            <ul className="list-disc list-inside text-gray-300 space-y-2">
+              <li>Interrupt others while speaking</li>
+              <li>Use inappropriate language</li>
+              <li>Dominate the conversation</li>
+              <li>Ignore others' contributions</li>
+              <li>Get distracted or off-topic</li>
+            </ul>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="bg-black rounded-xl p-8 mb-12 border-2 border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+      >
+        <h2 className="text-3xl font-bold text-white mb-8 border-b border-white/10 pb-4">
+          Types of Group Discussions
+        </h2>
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-2">Case Study Discussion</h3>
+            <p className="text-gray-300">
+              Analyzing real-world scenarios and discussing potential solutions.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-2">Topic-based Discussion</h3>
+            <p className="text-gray-300">
+              Exploring specific subjects with structured arguments and counter-arguments.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-2">Problem-solving Discussion</h3>
+            <p className="text-gray-300">
+              Collaborative approach to finding solutions for given challenges.
+            </p>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        className="bg-black rounded-xl p-8 border-2 border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+      >
+        <h2 className="text-3xl font-bold text-white mb-8 border-b border-white/10 pb-4">
+          Idea Generation Techniques
+        </h2>
+        <ul className="list-disc list-inside text-gray-300 space-y-4">
+          <li>Brainstorming - Free-flowing idea generation without criticism</li>
+          <li>Mind Mapping - Visual organization of related concepts</li>
+          <li>Round Robin - Structured sharing of ideas in turns</li>
+          <li>Six Thinking Hats - Different perspectives on the same topic</li>
+          <li>Reverse Brainstorming - Identifying problems to find solutions</li>
+        </ul>
+      </motion.div>
+    </div>
+  );
+}
+
+export default Week6;
   

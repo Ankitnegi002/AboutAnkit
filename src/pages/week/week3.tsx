@@ -2,92 +2,70 @@ import { motion } from "framer-motion";
 
 function Week3() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-black text-white">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-center mb-8"
+        className="text-center mb-16"
       >
-        <h1 className="text-3xl font-bold text-gray-900 mb-4">
-          Week 3: Sell your Vision
+        <h1 className="text-5xl sm:text-6xl font-bold text-white mb-8">
+          Week 3: Selling a Product
         </h1>
-        <p className="text-lg text-gray-600">
-          We took part in an activity that required us to work together as a team, devise a strategy, and present a product to an audience—all within a 20-minute timeframe.
+        <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          A team-based activity focused on developing presentation and sales skills through product pitching.
         </p>
       </motion.div>
 
-      {/* Video Section */}
-      <div className="mb-8 bg-white p-6 rounded-lg shadow-lg">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">
-          Session Video:
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="bg-black rounded-xl p-8 mb-12 border-2 border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+      >
+        <h2 className="text-3xl font-bold text-white mb-8 border-b border-white/10 pb-4">
+          Activity Overview
         </h2>
-        <iframe
-          className="w-full h-64 sm:h-80 rounded-lg shadow-md"
-          src="https://drive.google.com/file/d/14UZRNEP0cZkG7r_PsZKDBqqiMVhIKeub/preview"
-          title="Emotional Intelligence Session"
-          allowFullScreen
-        ></iframe>
-      </div>
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-xl font-bold text-white mb-4">Team Formation</h3>
+            <p className="text-gray-300">
+              Students were divided into teams and assigned a product to sell. Each team had to create a compelling sales pitch and presentation strategy.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold text-white mb-4">Product Strategy</h3>
+            <p className="text-gray-300">
+              Teams analyzed their product's unique selling points, target audience, and market positioning to create an effective sales approach.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold text-white mb-4">Presentation Skills</h3>
+            <p className="text-gray-300">
+              Each team delivered their sales pitch, focusing on clear communication, persuasive techniques, and professional presentation skills.
+            </p>
+          </div>
+        </div>
+      </motion.div>
 
-      {/* PPT Section */}
-      <div className="bg-white p-6 rounded-lg shadow-lg">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">
-          Presentation Slides:
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="bg-black rounded-xl p-8 border-2 border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+      >
+        <h2 className="text-3xl font-bold text-white mb-8 border-b border-white/10 pb-4">
+          Key Learning Outcomes
         </h2>
-        <iframe 
-          className="w-full h-64 sm:h-80 rounded-lg shadow-md"
-          src="https://docs.google.com/presentation/d/e/2PACX-1vS2x2bpoAm3EwMjdPjW3HYYL39r3wGwlkPcAYco47140OX8JpXprhLH_AqUSkinkg/embed?start=false&loop=false&delayms=3000" 
-          allowFullScreen
-        ></iframe>
-        <p className="mt-4 text-indigo-600 text-center">
-          <a 
-            href="https://docs.google.com/presentation/d/1dDOPpNwo0Qq3pyQ8Oayu8I4XzZU7GLZi/edit?usp=sharing&ouid=116156010022272725855&rtpof=true&sd=true" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="hover:underline"
-          >
-            Open Full Presentation
-          </a>
-        </p>
-      </div>
-
-      {/* Activity Participation Section */}
-      <div className="bg-white p-6 rounded-lg shadow-lg">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">
-          We participated in an activity where we had to:
-        </h2>
-        <ul className="list-disc list-inside text-gray-700 space-y-2">
-          <li>Collaboratively form a team</li>
-          <li>Strategize</li>
-          <li>Present a product to an audience within a 20-minute timeframe</li>
+        <ul className="list-disc list-inside text-gray-300 space-y-4">
+          <li>Developed effective team collaboration and communication skills</li>
+          <li>Enhanced presentation and public speaking abilities</li>
+          <li>Learned to create and deliver persuasive sales pitches</li>
+          <li>Improved understanding of product marketing and positioning</li>
+          <li>Gained experience in handling questions and feedback</li>
+          <li>Developed time management and project planning skills</li>
         </ul>
-      </div>
-
-      {/* Key Points Section */}
-      <div className="bg-white p-6 rounded-lg shadow-lg">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">
-          Key points:
-        </h2>
-        <ul className="list-disc list-inside text-gray-700 space-y-2">
-          <li>It was a challenging task.</li>
-          <li>Not all team members were confident.</li>
-          <li>The initial start was not good.</li>
-        </ul>
-      </div>
-
-      {/* Key Takeaways Section */}
-      <div className="bg-white p-6 rounded-lg shadow-lg">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">
-          Key Takeaways:
-        </h2>
-        <ul className="list-disc list-inside text-gray-700 space-y-2">
-          <li>Team collaboration and clear communication are crucial under pressure.</li>
-          <li>Confidence can be built through preparation and support from teammates.</li>
-          <li>Time management is essential when working with tight deadlines.</li>
-          <li>Flexibility and adaptability are key when things don't go as planned.</li>
-        </ul>
-      </div>
+      </motion.div>
     </div>
   );
 }

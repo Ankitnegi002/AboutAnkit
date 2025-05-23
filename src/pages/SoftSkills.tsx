@@ -1,84 +1,87 @@
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { Video, ArrowRight } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Users, MessageSquare, Presentation, Brain, Heart, Award } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
+const weekData = [
+  {
+    title: "Week 1: Introduction to Soft Skills",
+    description: "Understanding the importance of soft skills in professional development",
+    icon: Users,
+    path: "/softskills/week1"
+  },
+  {
+    title: "Week 2: Communication Skills",
+    description: "Mastering effective communication techniques and interview preparation",
+    icon: MessageSquare,
+    path: "/softskills/week2"
+  },
+  {
+    title: "Week 3: Presentation Skills",
+    description: "Learning to present ideas effectively and handle public speaking",
+    icon: Presentation,
+    path: "/softskills/week3"
+  },
+  {
+    title: "Week 4: Writing Skills",
+    description: "Developing professional writing and email communication skills",
+    icon: Brain,
+    path: "/softskills/week4"
+  },
+  {
+    title: "Week 5: Emotional Intelligence",
+    description: "Understanding and managing emotions in professional settings",
+    icon: Heart,
+    path: "/softskills/week5"
+  },
+  {
+    title: "Week 6: Leadership Skills",
+    description: "Building leadership qualities and team management abilities",
+    icon: Award,
+    path: "/softskills/week6"
+  },
+];
 
 function SoftSkills() {
-  const weekData = [
-    {
-      week: 1,
-      title: "Week 1: Introduction Video & Activity",
-      description:
-        "It was an introductory session on career skills, where we were guided on how to present a professional self-introduction along with a activity about working of lest and right brain.",
-    },
-    {
-      week: 2,
-      title: "Week 2: Profile sheet Interview Questions",
-      description:
-        "In the session, we learned how to effectively respond to key questions commonly asked in placement interviews.",
-    },
-    {
-      week: 3,
-      title: "Week 3: Selling a Product",
-      description:
-        "We participated in an activity where we had to collaboratively form a team, strategize, and present a product to an audience within a 20-minute timeframe.",
-    },
-    {
-      week: 4,
-      title: "Week 4: Writing Skills & E-mail Writing Skills",
-      description:
-        "We participated in an activity where we were given samples of poorly written emails and had to rewrite them without any mistakes.",
-    },
-    {
-      week: 5,
-      title: "Week 5: Mini Film Festival",
-      description:
-        "A list of 10 movies was provided, and we had to select one and answer a set of given questions based on that movie.",
-    },
-    {
-      week: 6,
-      title: "Week 6: Group Discussion",
-      description:
-        "Understanding the Do's & Don'ts of a GD and the importance of effective communication in a group setting. We also discussed different types of GD's and Idea Generation techniques.",
-    },
-  ];
+  const navigate = useNavigate();
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-black text-white">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-center mb-12"
+        className="text-center mb-16"
       >
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          Soft Skills Development
-        </h1>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Track my journey in developing essential soft skills through weekly
-          career skill sessions and activities.
+        <h1 className="text-5xl sm:text-6xl font-bold text-white mb-8">Soft Skills Development</h1>
+        <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          A comprehensive program designed to enhance your professional and interpersonal skills
         </p>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {weekData.map(({ week, title, description }) => (
+        {weekData.map((week, index) => (
           <motion.div
-            key={week}
+            key={index}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: week * 0.1 }}
-            className="bg-white rounded-lg shadow-lg p-6"
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="bg-black rounded-xl p-8 border-2 border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
           >
-            <div className="flex items-center mb-4">
-              <Video className="text-indigo-600 mr-3" size={24} />
-              <h2 className="text-xl font-bold text-gray-900">{title}</h2>
+            <div className="flex items-center mb-6">
+              <div className="p-3 rounded-lg bg-white/5 border border-white/10 mr-4">
+                <week.icon className="text-white" size={24} />
+              </div>
+              <h2 className="text-2xl font-bold text-white">{week.title}</h2>
             </div>
-            <p className="text-gray-600 mb-4">{description}</p>
-            <Link
-              to={`/softskills/week${week}`}
-              className="inline-flex items-center text-indigo-600 hover:text-indigo-700"
+            <p className="text-gray-300">{week.description}</p>
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="mt-6 w-full px-6 py-3 border-2 border-white/10 text-base font-medium rounded-lg text-white bg-black hover:bg-white/5 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+              onClick={() => navigate(week.path)}
             >
-              View Session <ArrowRight size={16} className="ml-2" />
-            </Link>
+              Learn More
+            </motion.button>
           </motion.div>
         ))}
       </div>

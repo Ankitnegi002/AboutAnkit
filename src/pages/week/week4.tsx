@@ -1,61 +1,104 @@
-function Week4() {
-    const images = [
-      "https://selzy.com/en/blog/wp-content/uploads/2023/06/6-8.png",
-      "https://selzy.com/en/blog/wp-content/uploads/2023/06/4-11.png",
-      "https://selzy.com/en/blog/wp-content/uploads/2023/06/3-9.png",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnhYLbqSxALy0-JZesVNDPRyHtvYe76dxI1kNNptDKDncvV1n6qXrJ44fqmqH6OK4h--Y&usqp=CAU",
-      "https://selzy.com/en/blog/wp-content/uploads/2023/06/1-7.png",
-      "https://selzy.com/en/blog/wp-content/uploads/2023/06/2-7.png"
-    ];
-  
-    return (
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-3xl font-bold text-gray-900 mb-4">Week 4: Email Correction Activity & 7 C's of Communication</h1>
-        
-        <div className="bg-white p-6 rounded-lg shadow-lg">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">
-          7 C's of Communication:
-        </h2>
-        <ul className="list-disc list-inside text-gray-700 space-y-2">
-          <li><strong>Clarity:</strong>&nbsp;Be clear about the message you want to convey, ensuring the receiver understands it without confusion.</li>
-          <li><strong>Conciseness:</strong>&nbsp;Keep your message brief and to the point, eliminating unnecessary details.</li>
-          <li><strong>Concreteness:</strong>&nbsp;Use specific facts and figures to support your message, avoiding vague or ambiguous language.</li>
-          <li><strong>Correctness:</strong>&nbsp;Ensure your message is accurate and free of errors, as mistakes can undermine your credibility.</li>
-          <li><strong>Completeness:</strong>&nbsp;Make sure your message includes all necessary information, providing the recipient with everything they need to respond appropriately.</li>
-          <li><strong>Courtesy:</strong>&nbsp;Be polite and respectful in your communication, fostering a positive interaction</li>
-          <li><strong>Consideration:</strong>Tailor your message to the receiver’s perspective, understanding their needs and background.</li>
-        </ul>
-      </div>
-      <br /><br />
-      <p className="text-lg text-gray-600 mb-6">
-          We participated in an activity where we were given samples of poorly written emails and had to rewrite them without any mistakes.
-        </p>
+import { motion } from "framer-motion";
 
-        <div className="mt-6">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">Uploaded Samples:</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {images.map((src, index) => (
-              <div key={index} className="overflow-hidden rounded-lg shadow-md transition-transform transform hover:scale-105">
-                <img 
-                  src={src} 
-                  alt={`Email Sample ${index + 1}`} 
-                  className="w-full h-48 object-cover" 
-                />
-              </div>
-            ))}
+function Week4() {
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-black text-white">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-center mb-16"
+      >
+        <h1 className="text-5xl sm:text-6xl font-bold text-white mb-8">
+          Week 4: Writing Skills & E-mail Writing Skills
+        </h1>
+        <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          A comprehensive session on professional writing and email communication skills.
+        </p>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="bg-black rounded-xl p-8 mb-12 border-2 border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+      >
+        <h2 className="text-3xl font-bold text-white mb-8 border-b border-white/10 pb-4">
+          Email Writing Best Practices
+        </h2>
+        <ul className="list-disc list-inside text-gray-300 space-y-4">
+          <li>Use clear and concise language</li>
+          <li>Maintain a professional tone</li>
+          <li>Structure your email with a clear purpose</li>
+          <li>Proofread before sending</li>
+        </ul>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="bg-black rounded-xl p-8 mb-12 border-2 border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+      >
+        <h2 className="text-3xl font-bold text-white mb-8 border-b border-white/10 pb-4">
+          Common Email Mistakes to Avoid
+        </h2>
+        <ul className="list-disc list-inside text-gray-300 space-y-4">
+          <li>Using informal language in professional contexts</li>
+          <li>Writing overly long emails without clear structure</li>
+          <li>Forgetting to include necessary attachments</li>
+          <li>Using unclear subject lines</li>
+          <li>Not proofreading for errors</li>
+        </ul>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        className="bg-black rounded-xl p-8 border-2 border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+      >
+        <h2 className="text-3xl font-bold text-white mb-8 border-b border-white/10 pb-4">
+          Uploaded Samples
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="relative group overflow-hidden rounded-xl border-2 border-white/10 hover:border-white/30 transition-all duration-300">
+            <img
+              src="/images/email1.jpg"
+              alt="Email Sample 1"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          <div className="relative group overflow-hidden rounded-xl border-2 border-white/10 hover:border-white/30 transition-all duration-300">
+            <img
+              src="/images/email2.jpg"
+              alt="Email Sample 2"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
         </div>
-        
-        <div className="mt-6">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">Key Takeaways:</h2>
-          <ul className="list-disc list-inside text-gray-700 space-y-2">
-            <li>Understanding common email mistakes.</li>
-            <li>Improving clarity and professionalism in emails.</li>
-            <li>Practicing concise and effective communication.</li>
-          </ul>
-        </div>
-      </div>
-    );
-  }
-  
-  export default Week4;
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className="bg-black rounded-xl p-8 border-2 border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+      >
+        <h2 className="text-3xl font-bold text-white mb-8 border-b border-white/10 pb-4">
+          Key Takeaways
+        </h2>
+        <ul className="list-disc list-inside text-gray-300 space-y-4">
+          <li>Understanding the importance of professional communication</li>
+          <li>Learning to write clear and effective emails</li>
+          <li>Developing skills in business writing</li>
+          <li>Improving overall written communication</li>
+        </ul>
+      </motion.div>
+    </div>
+  );
+}
+
+export default Week4;

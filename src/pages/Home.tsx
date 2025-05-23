@@ -11,17 +11,19 @@ function Home() {
         degree: "B.Tech in Computer Science (AI & ML)",
         institution: "Graphic Era Hill University, Dehradun",
         year: "Expected: July 2027",
-        description: "Specializing in AI & ML with a focus on full-stack development.",
+        description:
+          "Specializing in AI & ML with a focus on game development.",
       },
       {
         degree: "Class XII (CBSE)",
-        institution: "J.P.M. Public School, Bareilly",
+        institution: "Shri Bharat Mandir Public School, Rishikesh",
         year: "2023",
-        description: "Completed higher secondary education with a focus on science and mathematics.",
+        description:
+          "Completed higher secondary education with a focus on science and mathematics.",
       },
       {
         degree: "Class X (CBSE)",
-        institution: "Delhi Public School, Bareilly",
+        institution: "Shri Bharat Mandir Public School, Rishikesh",
         year: "2021",
         description: "Completed secondary education with distinction.",
       },
@@ -29,114 +31,149 @@ function Home() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-black text-white">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-center mb-12"
+        className="flex flex-col md:flex-row items-center gap-12 mb-16"
       >
-        <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-6">
-          Hi, I'm <span className="text-indigo-600">Atharv Gangwar</span>
-        </h1>
-        <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-        B.Tech student specializing in AI & ML with a strong foundation in web development and programming. Passionate about building scalable applications and full-stack development.
-        </p>
+        <div className="flex-1 text-center md:text-left md:pr-8">
+          <h1 className="text-5xl sm:text-6xl font-bold text-white mb-8">
+            Hi, I'm{" "}
+            <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+              Ankit Negi
+            </span>
+          </h1>
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto md:mx-0">
+            B.Tech student specializing in AI & ML with a strong foundation in web
+            development and programming. Passionate about building scalable
+            applications and full-stack development.
+          </p>
+        </div>
+        <div className="w-96 relative group overflow-hidden rounded-xl border-2 border-white/10 hover:border-white/30 transition-all duration-300">
+          <div className="aspect-w-1 aspect-h-1">
+            <img
+              src="/images/three.jpg"
+              alt="Profile"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        </div>
       </motion.div>
 
       {/* Bio Section */}
-      <motion.div className="bg-white rounded-lg shadow-lg p-8 mb-16 text-center">
-        <h2 className="text-2xl font-bold text-gray-900">About Me</h2>
-        <p className="text-lg text-gray-700">
-          I am deeply committed to continuous learning and self-improvement, constantly seeking to expand my expertise in emerging technologies and new skills. I thrive on applying this knowledge to tackle real-world challenges, with a strong focus on innovation and problem-solving. My goal is to make a meaningful impact by leveraging my abilities to contribute to practical solutions in diverse fields.
-        </p>
-      </motion.div>
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="bg-black rounded-xl p-8 mb-16 border-2 border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+      >
+        <h2 className="text-3xl font-bold text-white mb-8 border-b border-white/10 pb-4">About Me</h2>
+        
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-4">Education & Focus</h3>
+            <p className="text-lg text-gray-300">
+              I am a B.Tech student specializing in Artificial Intelligence and Machine Learning, with a strong passion for solving real-world problems through innovative technologies. My interest in AI/ML comes from the exciting potential it holds to transform industries like healthcare, transportation, and education. I enjoy working on projects that involve data, logic, and algorithms — where I can train models and build smart systems that learn and adapt.
+            </p>
+          </div>
 
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-4">Creative Interests</h3>
+            <p className="text-lg text-gray-300">
+              Alongside AI, I'm also highly interested in game development and 3D modeling. I've explored tools like Godot for building simple 2D games and Blender for creating basic 3D models. These creative outlets allow me to experiment with interactive design, game mechanics, and visual storytelling. They've helped me strengthen my problem-solving skills and attention to detail.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-4">Projects & Experience</h3>
+            <p className="text-lg text-gray-300">
+              While I haven't done any formal internships yet, I've worked on several academic and personal projects, including an object detection system, a flood evacuation route optimization tool using shortest path algorithms, and a few 3D game prototypes. These projects have given me practical exposure to both technical and creative aspects of development.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-4">Personal Traits</h3>
+            <p className="text-lg text-gray-300">
+              I'm calm under pressure, avoid conflicts, and work well in teams. I'm also working on improving my communication and interaction skills. I'm always curious to learn more and excited to contribute to meaningful, innovative tech projects.
+            </p>
+          </div>
+        </div>
+      </motion.div>
 
       {/* Gallery Section */}
-      <motion.div className="bg-white rounded-lg shadow-lg p-8 mb-16">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Picture Area</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <img src="/images/pic1.jpeg" alt="Project Image 1" className="w-full h-64 object-cover rounded-lg" />
-          <img src="/images/pic3.jpeg" alt="Project Image 2" className="w-full h-64 object-cover rounded-lg" />
-          <img src="/images/pic2.jpeg" alt="Project Image 3" className="w-full h-64 object-cover rounded-lg" />
-        </div>
-      </motion.div>
-
-      
-      {/* Education Section */}
-      <motion.div className="bg-white rounded-lg shadow-lg p-8 mb-16">
-        <div className="flex items-center mb-6">
-          <GraduationCap size={24} className="text-indigo-600 mr-3" />
-          <h2 className="text-2xl font-bold text-gray-900">Education</h2>
-        </div>
-        {personalInfo.education.map((edu, index) => (
-          <div key={index} className="mb-6">
-            <h3 className="text-lg font-semibold text-gray-900">{edu.degree}</h3>
-            <p className="text-gray-600">{edu.institution}</p>
-            <p className="text-gray-500 text-sm">{edu.year}</p>
-            <p className="text-gray-600 mt-2">{edu.description}</p>
-          </div>
-        ))}
-      </motion.div>
-
-      {/* Resume Request Form */}
-      <motion.div
+      <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="bg-white p-6 rounded-lg shadow-lg text-center max-w-lg mx-auto"
+        className="bg-black rounded-xl p-8 mb-16 border-2 border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
       >
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Download My Resume</h2>
-        <p className="text-gray-600 mb-4">Enter your details to receive the resume.</p>
-
-        {!submitted ? (
-          <form
-            action="https://formsubmit.co/atharvgangwar8@gmail.com"
-            method="POST"
-            className="space-y-4"
-            onSubmit={() => setSubmitted(true)}
-          >
-            {/* Hidden Inputs for FormSubmit */}
-            <input type="hidden" name="_subject" value="New Resume Download Request" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-
-            <input
-              type="text"
-              name="name"
-              required
-              placeholder="Enter your name"
-              className="border border-gray-300 rounded-md p-3 w-full"
-            />
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder="Enter your email"
-              className="border border-gray-300 rounded-md p-3 w-full"
-            />
-            <button
-              type="submit"
-              className="px-6 py-3 text-white bg-indigo-600 hover:bg-indigo-700 rounded-md font-medium w-full"
-            >
-              Request Resume <Download size={20} className="ml-2 inline" />
-            </button>
-          </form>
-        ) : (
-          <div>
-            <p className="text-green-600 font-semibold mb-4">
-              ✅ Thank you! Your details have been submitted.
-            </p>
-            <a
-              href="/AtharvGangwarResume.pdf"
-              download
-              className="px-6 py-3 text-white bg-indigo-600 hover:bg-indigo-700 rounded-md font-medium inline-flex items-center"
-            >
-              Download Resume <Download size={20} className="ml-2 inline" />
-            </a>
+        <h2 className="text-3xl font-bold text-white mb-8 border-b border-white/10 pb-4">Picture Area</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="relative group overflow-hidden rounded-xl border-2 border-white/10 hover:border-white/30 transition-all duration-300">
+            <div className="aspect-w-16 aspect-h-9">
+              <img
+                src="/images/one.jpg"
+                alt="Project Image 1"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
-        )}
+          <div className="relative group overflow-hidden rounded-xl border-2 border-white/10 hover:border-white/30 transition-all duration-300">
+            <div className="aspect-w-16 aspect-h-9">
+              <img
+                src="/images/two.jpg"
+                alt="Project Image 2"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          <div className="relative group overflow-hidden rounded-xl border-2 border-white/10 hover:border-white/30 transition-all duration-300">
+            <div className="aspect-w-16 aspect-h-9">
+              <img
+                src="/images/three.jpg"
+                alt="Project Image 3"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+        </div>
+      </motion.div>
+
+      {/* Education Section */}
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="bg-black rounded-xl p-8 mb-16 border-2 border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+      >
+        <div className="flex items-center mb-8 border-b border-white/10 pb-4">
+          <GraduationCap size={32} className="text-white mr-4" />
+          <h2 className="text-3xl font-bold text-white">Education</h2>
+        </div>
+        <div className="space-y-8">
+          {personalInfo.education.map((edu, index) => (
+            <motion.div 
+              key={index} 
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+              className="p-6 rounded-lg border border-white/10 hover:border-white/30 transition-all duration-300"
+            >
+              <h3 className="text-xl font-bold text-white mb-2">
+                {edu.degree}
+              </h3>
+              <p className="text-gray-300 mb-1">{edu.institution}</p>
+              <p className="text-gray-400 text-sm mb-3">{edu.year}</p>
+              <p className="text-gray-300">{edu.description}</p>
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
     </div>
   );
