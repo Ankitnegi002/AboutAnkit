@@ -7,83 +7,83 @@ function Week2() {
   const interviewQuestions = [
     {
       title: "Tell your career objective",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: "1jRQPOhWtSsw0eievJMNBkKu6zeBMfLjy"
     },
     {
       title: "Why do you want to be an engineer?",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: "1pQnLGOc-q0PxbSZMHpMTnkhyz-Kzgo6d"
     },
     {
       title: "Tell about your Project or internship you have done/are doing along with the learning",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: "13YUva_VioMhsm6-yoA1kNC0e35stNp4l"
     },
     {
       title: "What would you consider a significant achievement in your life and why",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: "1i5et3Vspe7t2WduleWxtCfbXtum8E4NI"
     },
     {
       title: "Tell about a failure of your which you consider to share. What have you learned from it?",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: "15n-Mvey0OFZcHpeew4RNnmOR-5B9w9AN"
     },
     {
       title: "What are your strengths? Tell one or two instances where you have demonstrate your strength",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: "1fcW68cyL6hLIyZ-nhv1zZ8Dkn1HzRtiD"
     },
     {
       title: "Tell about your weakness. What are you doing to overcome your weaknesses?",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: "1q14v3XqvVMMREaGqSvC7klkNpnllQ3Ro"
     },
     {
       title: "What is the most difficult moment that you have faced in your life so far? What qualities helped you to overcome the moment?",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: "1Y3_BRdGJ0WzTGNY0yAPjJGRsO1xp4COw"
     },
     {
       title: "Apart from academics, what else are you interested in?",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: "1S3wIbqKFoc2-y6Y1CLmj1YUb6iQkB6rt"
     },
     {
       title: "Give an example of an area, concept, or thing that you are absolutely passionate about.",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: "1bImsOyK4J6tw24V0cnQHKhHybd1erqV8"
     },
     {
       title: "Describe yourself as an individual in 5 lines.",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: ""
     },
     {
       title: "What kinds of people do you enjoy working with?",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: ""
     },
     {
       title: "What kinds of people do you not want to work with? What would you do if they became your senior in your dream job?",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: ""
     },
     {
       title: "What do you expect from your first job? Prioritize and Tell in order.",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: ""
     },
     {
       title: "In the past year, what have you been dissatisfied about in your performance?",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: ""
     },
     {
       title: "Rate yourself out of 5 in verbal communication. What are you doing to improve your communication skills?",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: ""
     },
     {
       title: "Who is your role model? What qualities of that person would you like to see in your personality and why?",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: "y"
     },
     {
       title: "Tell a few lines about your friends. Do you think they help/may help you in achieving your goals? If yes, how? If no, why do you accompany them?",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: ""
     },
     {
       title: "Tell 3 leadership qualities. How many do you possess? Tell an instance where you have applied those qualities.",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: ""
     },
     {
       title: "So finally, tell us something more about yourself or introduce yourself.",
-      videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
+      videoId: ""
     }
   ];
 
