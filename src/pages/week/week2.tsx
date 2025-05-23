@@ -6,83 +6,83 @@ function Week2() {
 
   const interviewQuestions = [
     {
-      title: "Tell me about yourself",
+      title: "Tell your career objective",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "What are your strengths?",
+      title: "Why do you want to be an engineer?",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "What are your weaknesses?",
+      title: "Tell about your Project or internship you have done/are doing along with the learning",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "Why do you want to work here?",
+      title: "What would you consider a significant achievement in your life and why",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "Where do you see yourself in 5 years?",
+      title: "Tell about a failure of your which you consider to share. What have you learned from it?",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "Why should we hire you?",
+      title: "What are your strengths? Tell one or two instances where you have demonstrate your strength",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "What is your greatest achievement?",
+      title: "Tell about your weakness. What are you doing to overcome your weaknesses?",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "How do you handle stress?",
+      title: "What is the most difficult moment that you have faced in your life so far? What qualities helped you to overcome the moment?",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "Describe a challenging situation",
+      title: "Apart from academics, what else are you interested in?",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "What are your salary expectations?",
+      title: "Give an example of an area, concept, or thing that you are absolutely passionate about.",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "Do you have any questions for us?",
+      title: "Describe yourself as an individual in 5 lines.",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "How do you work in a team?",
+      title: "What kinds of people do you enjoy working with?",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "What motivates you?",
+      title: "What kinds of people do you not want to work with? What would you do if they became your senior in your dream job?",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "How do you handle criticism?",
+      title: "What do you expect from your first job? Prioritize and Tell in order.",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "What is your leadership style?",
+      title: "In the past year, what have you been dissatisfied about in your performance?",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "How do you prioritize work?",
+      title: "Rate yourself out of 5 in verbal communication. What are you doing to improve your communication skills?",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "What are your career goals?",
+      title: "Who is your role model? What qualities of that person would you like to see in your personality and why?",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "How do you handle failure?",
+      title: "Tell a few lines about your friends. Do you think they help/may help you in achieving your goals? If yes, how? If no, why do you accompany them?",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "What is your work style?",
+      title: "Tell 3 leadership qualities. How many do you possess? Tell an instance where you have applied those qualities.",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     },
     {
-      title: "How do you stay updated?",
+      title: "So finally, tell us something more about yourself or introduce yourself.",
       videoId: "1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy"
     }
   ];
