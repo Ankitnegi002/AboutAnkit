@@ -25,7 +25,7 @@ function Week1() {
       >
         <iframe
           className="w-full h-64 sm:h-96 rounded-xl border-2 border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
-          src="https://drive.google.com/file/d/1Oh28tBiX0h0pOkSv5QJrn2ylRGg4I-Wy/preview"
+          src=""
           title="Professional Self-Introduction"
           allowFullScreen
         ></iframe>
