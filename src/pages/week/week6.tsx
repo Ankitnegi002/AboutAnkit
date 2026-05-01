@@ -10,7 +10,7 @@ function Week6() {
         className="text-center mb-16"
       >
         <h1 className="text-5xl sm:text-6xl font-bold text-white mb-8">
-          Week 6: Group Discussion
+          Group Discussion
         </h1>
         <p className="text-xl text-gray-300 max-w-2xl mx-auto">
           A comprehensive session on effective communication and different types of group discussions.

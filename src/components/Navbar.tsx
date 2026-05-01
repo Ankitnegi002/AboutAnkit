@@ -8,7 +8,12 @@ function Navbar() {
   const location = useLocation();
 
   const isActive = (path: string) => location.pathname === path;
-  const weeks = Array.from({ length: 6 }, (_, i) => i + 1);
+  const weeks = [1, 2, 6];
+  const weekLabels: Record<number, string> = {
+    1: "Introduction Video",
+    2: "Interview Preparation",
+    6: "Group Discussion",
+  };
 
   return (
     <nav className="bg-black shadow-lg border-b border-gray-800">
@@ -75,20 +80,52 @@ function Navbar() {
                     >
                       Overview
                     </Link>
-                    {weeks.map((week) => (
+                    {weeks.slice(0, 1).map((week) => (
                       <Link
                         key={week}
                         to={`/softskills/week${week}`}
                         className="block px-4 py-2 text-sm text-gray-300 hover:text-black hover:bg-white hover:border-2 hover:border-white transition-all duration-300 ease-in-out"
                         onClick={() => setIsSoftSkillsOpen(false)}
                       >
-                        Week {week}
+                        {weekLabels[week]}
                       </Link>
                     ))}
+                    <Link
+                      to="/softskills/essay-writing"
+                      className="block px-4 py-2 text-sm text-gray-300 hover:text-black hover:bg-white hover:border-2 hover:border-white transition-all duration-300 ease-in-out"
+                      onClick={() => setIsSoftSkillsOpen(false)}
+                    >
+                      Essay Writing
+                    </Link>
+                    <Link
+                      to="/softskills/week2"
+                      className="block px-4 py-2 text-sm text-gray-300 hover:text-black hover:bg-white hover:border-2 hover:border-white transition-all duration-300 ease-in-out"
+                      onClick={() => setIsSoftSkillsOpen(false)}
+                    >
+                      Interview Preparation
+                    </Link>
+                    <Link
+                      to="/softskills/week6"
+                      className="block px-4 py-2 text-sm text-gray-300 hover:text-black hover:bg-white hover:border-2 hover:border-white transition-all duration-300 ease-in-out"
+                      onClick={() => setIsSoftSkillsOpen(false)}
+                    >
+                      Group Discussion
+                    </Link>
                   </div>
                 </div>
               )}
             </div>
+
+            <Link
+              to="/resume"
+              className={`${
+                isActive("/resume")
+                  ? "text-white border-2 border-white bg-black"
+                  : "text-gray-300 hover:text-black hover:bg-white hover:border-2 hover:border-white"
+              } px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ease-in-out`}
+            >
+              Resume
+            </Link>
 
             <Link
               to="/contact"
@@ -100,7 +137,7 @@ function Navbar() {
             >
               Contact
             </Link>
-          </div>
+            </div>
 
           <div className="md:hidden flex items-center">
             <button
@@ -165,29 +202,56 @@ function Navbar() {
                   <Link
                     to="/softskills/overview"
                     className="block px-3 py-2 text-base text-gray-300 hover:text-black hover:bg-white hover:border-2 hover:border-white rounded-md transition-all duration-300 ease-in-out"
-                    onClick={() => {
-                      setIsOpen(false);
-                      setIsSoftSkillsOpen(false);
-                    }}
+                    onClick={() => { setIsOpen(false); setIsSoftSkillsOpen(false); }}
                   >
                     Overview
                   </Link>
-                  {weeks.map((week) => (
+                  {weeks.slice(0, 1).map((week) => (
                     <Link
                       key={week}
                       to={`/softskills/week${week}`}
                       className="block px-3 py-2 text-base text-gray-300 hover:text-black hover:bg-white hover:border-2 hover:border-white rounded-md transition-all duration-300 ease-in-out"
-                      onClick={() => {
-                        setIsOpen(false);
-                        setIsSoftSkillsOpen(false);
-                      }}
+                      onClick={() => { setIsOpen(false); setIsSoftSkillsOpen(false); }}
                     >
-                      Week {week}
+                      {weekLabels[week]}
                     </Link>
                   ))}
+                  <Link
+                    to="/softskills/essay-writing"
+                    className="block px-3 py-2 text-base text-gray-300 hover:text-black hover:bg-white hover:border-2 hover:border-white rounded-md transition-all duration-300 ease-in-out"
+                    onClick={() => { setIsOpen(false); setIsSoftSkillsOpen(false); }}
+                  >
+                    Essay Writing
+                  </Link>
+                  <Link
+                    to="/softskills/week2"
+                    className="block px-3 py-2 text-base text-gray-300 hover:text-black hover:bg-white hover:border-2 hover:border-white rounded-md transition-all duration-300 ease-in-out"
+                    onClick={() => { setIsOpen(false); setIsSoftSkillsOpen(false); }}
+                  >
+                    Interview Preparation
+                  </Link>
+                  <Link
+                    to="/softskills/week6"
+                    className="block px-3 py-2 text-base text-gray-300 hover:text-black hover:bg-white hover:border-2 hover:border-white rounded-md transition-all duration-300 ease-in-out"
+                    onClick={() => { setIsOpen(false); setIsSoftSkillsOpen(false); }}
+                  >
+                    Group Discussion
+                  </Link>
                 </div>
               )}
             </div>
+
+            <Link
+              to="/resume"
+              className={`${
+                isActive("/resume")
+                  ? "bg-white text-black border-2 border-white"
+                  : "text-gray-300 hover:text-black hover:bg-white hover:border-2 hover:border-white"
+              } block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ease-in-out`}
+              onClick={() => setIsOpen(false)}
+            >
+              Resume
+            </Link>
 
             <Link
               to="/contact"
@@ -199,6 +263,17 @@ function Navbar() {
               onClick={() => setIsOpen(false)}
             >
               Contact
+            </Link>
+            <Link
+              to="/resume"
+              className={`${
+                isActive("/resume")
+                  ? "bg-white text-black border-2 border-white"
+                  : "text-gray-300 hover:text-black hover:bg-white hover:border-2 hover:border-white"
+              } block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ease-in-out`}
+              onClick={() => setIsOpen(false)}
+            >
+              Resume
             </Link>
           </div>
         </div>

@@ -96,7 +96,7 @@ function Week2() {
         className="text-center mb-8"
       >
         <h1 className="text-3xl font-bold text-white mb-4">
-          Week 2: Interview Preparation
+          Interview Preparation
         </h1>
         <p className="text-lg text-gray-300">
           A comprehensive guide to common interview questions and how to answer them effectively.
@@ -132,7 +132,7 @@ function Week2() {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="bg-gray-900/50 p-6 rounded-lg border border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+          className="bg-gray-900/50 p-6 rounded-lg border border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] sticky top-4 self-start"
         >
           <h2 className="text-xl font-bold text-white mb-4">
             Video Response

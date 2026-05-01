@@ -1,40 +1,28 @@
 import { motion } from "framer-motion";
-import { Users, MessageSquare, Presentation, Brain, Heart, Award } from "lucide-react";
+import { Users, MessageSquare, Award, PenLine } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const weekData = [
   {
-    title: "Week 1: Introduction to Soft Skills",
+    title: "Introduction Video",
     description: "Understanding the importance of soft skills in professional development",
     icon: Users,
     path: "/softskills/week1"
   },
   {
-    title: "Week 2: Communication Skills",
+    title: "Essay Writing",
+    description: "Developing the ability to express ideas clearly through structured writing",
+    icon: PenLine,
+    path: "/softskills/essay-writing"
+  },
+  {
+    title: "Interview Preparation",
     description: "Mastering effective communication techniques and interview preparation",
     icon: MessageSquare,
     path: "/softskills/week2"
   },
   {
-    title: "Week 3: Presentation Skills",
-    description: "Learning to present ideas effectively and handle public speaking",
-    icon: Presentation,
-    path: "/softskills/week3"
-  },
-  {
-    title: "Week 4: Writing Skills",
-    description: "Developing professional writing and email communication skills",
-    icon: Brain,
-    path: "/softskills/week4"
-  },
-  {
-    title: "Week 5: Emotional Intelligence",
-    description: "Understanding and managing emotions in professional settings",
-    icon: Heart,
-    path: "/softskills/week5"
-  },
-  {
-    title: "Week 6: Leadership Skills",
+    title: "Group Discussion",
     description: "Building leadership qualities and team management abilities",
     icon: Award,
     path: "/softskills/week6"
